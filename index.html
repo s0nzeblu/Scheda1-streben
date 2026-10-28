@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Scheda Personaggio - Streben</title>
+    <style>
+        body {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .sheet-container {
+            position: relative;
+            width: 800px;
+            max-width: 100%;
+        }
+        .sheet-container img {
+            width: 100%;
+            display: block;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.8);
+        }
+        .input-field {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px dashed #666;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            padding: 2px 5px;
+            box-sizing: border-box;
+        }
+        .input-field:focus {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #000;
+            outline: none;
+        }
+        .circle-field {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px dashed #666;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            box-sizing: border-box;
+        }
+        .circle-field:focus {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #000;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="sheet-container">
+        <!-- Immagine di sfondo -->
+        <img src="https://i.ibb.co/3yk50F4C/image.png" alt="Scheda Streben">
+        
+        <!-- PERSONAGGIO, GIOCATORE, PROFILO -->
+        <input type="text" class="input-field" style="top: 17.5%; left: 6%; width: 27%; height: 3%;">
+        <input type="text" class="input-field" style="top: 25.5%; left: 6%; width: 27%; height: 3%;">
+        <input type="text" class="input-field" style="top: 33.5%; left: 6%; width: 27%; height: 3%;">
+        
+        <!-- STATISTICHE (Corpo, Mente, Spirito) -->
+        <input type="text" class="circle-field" style="top: 15.6%; left: 51.2%; width: 7.2%; height: 6.8%;">
+        <input type="text" class="circle-field" style="top: 23%; left: 51.2%; width: 7.2%; height: 6.8%;">
+        <input type="text" class="circle-field" style="top: 30.5%; left: 51.2%; width: 7.2%; height: 6.8%;">
+
+        <!-- PUNTI (Ferita, Magia, Fortuna) -->
+        <input type="text" class="circle-field" style="top: 15.6%; left: 85.8%; width: 7.2%; height: 6.8%;">
+        <input type="text" class="circle-field" style="top: 23.2%; left: 85.8%; width: 7.2%; height: 6.8%;">
+        <input type="text" class="circle-field" style="top: 30.6%; left: 85.8%; width: 7.2%; height: 6.8%;">
+
+        <!-- ARMA E DANNO -->
+        <input type="text" class="input-field" style="top: 43.5%; left: 6%; width: 33%; height: 2.8%;">
+        <input type="text" class="input-field" style="top: 43.5%; left: 41%; width: 23%; height: 2.8%;">
+        <input type="text" class="input-field" style="top: 46.5%; left: 6%; width: 33%; height: 2.8%;">
+        <input type="text" class="input-field" style="top: 46.5%; left: 41%; width: 23%; height: 2.8%;">
+        <input type="text" class="input-field" style="top: 49.5%; left: 6%; width: 33%; height: 2.8%;">
+        <input type="text" class="input-field" style="top: 49.5%; left: 41%; width: 23%; height: 2.8%;">
+
+        <!-- ARMATURA, SCUDO E RD -->
+        <input type="text" class="input-field" style="top: 43.5%; left: 66%; width: 19%; height: 2.8%;">
+        <input type="text" class="circle-field" style="top: 39.5%; left: 86.6%; width: 6.8%; height: 6.4%;">
+        <input type="text" class="circle-field" style="top: 46.5%; left: 86.6%; width: 6.8%; height: 6.4%;">
+
+        <!-- TALENTI -->
+        <input type="text" class="input-field" style="top: 55.8%; left: 6%; width: 42%; height: 2.6%;">
+        <input type="text" class="input-field" style="top: 55.8%; left: 51%; width: 42%; height: 2.6%;">
+        <input type="text" class="input-field" style="top: 58.8%; left: 6%; width: 42%; height: 2.6%;">
+        <input type="text" class="input-field" style="top: 58.8%; left: 51%; width: 42%; height: 2.6%;">
+
+        <!-- EQUIPAGGIAMENTO -->
+        <input type="text" class="input-field" style="top: 67.8%; left: 6%; width: 87%; height: 2.5%;">
+        <input type="text" class="input-field" style="top: 70.8%; left: 6%; width: 87%; height: 2.5%;">
+        <input type="text" class="input-field" style="top: 73.8%; left: 6%; width: 87%; height: 2.5%;">
+        <input type="text" class="input-field" style="top: 76.8%; left: 6%; width: 87%; height: 2.5%;">
+
+        <!-- MAGIA -->
+        <input type="text" class="input-field" style="top: 82.8%; left: 6%; width: 48%; height: 2.5%;">
+        <input type="text" class="input-field" style="top: 82.8%; left: 56%; width: 10%; height: 2.5%;">
+        <input type="text" class="input-field" style="top: 85.8%; left: 6%; width: 48%; height: 2.5%;">
+        <input type="text" class="input-field" style="top: 85.8%; left: 56%; width: 10%; height: 2.5%;">
+
+        <!-- DINARIUS (Ultima riga, campo allungato) -->
+        <input type="text" class="input-field" style="top: 92.2%; left: 22%; width: 71%; height: 2.8%;">
+    </div>
+</body>
+</html>
